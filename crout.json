@@ -1,0 +1,995 @@
+{
+    "reports": [
+        {
+            "aggregate": {
+                "sloc": {
+                    "logical": 85,
+                    "physical": 277
+                },
+                "cyclomatic": 1,
+                "halstead": {
+                    "operators": {
+                        "distinct": 9,
+                        "total": 295,
+                        "identifiers": [
+                            "const",
+                            "=",
+                            "()",
+                            ".",
+                            "var",
+                            "{}",
+                            ":",
+                            "function",
+                            "+"
+                        ]
+                    },
+                    "operands": {
+                        "distinct": 83,
+                        "total": 343,
+                        "identifiers": [
+                            "express",
+                            "\"express\"",
+                            "require",
+                            "app",
+                            "cors",
+                            "\"cors\"",
+                            "use",
+                            "bodyParser",
+                            "\"body-parser\"",
+                            "json",
+                            "<anonymous>",
+                            "extended",
+                            true,
+                            "urlencoded",
+                            "fetch",
+                            "\"node-fetch\"",
+                            "req",
+                            "res",
+                            "next",
+                            "\"Access-Control-Allow-Origin\"",
+                            "\"*\"",
+                            "header",
+                            "\"Access-Control-Allow-Headers\"",
+                            "\"Origin, X-Requested-With, Content-Type, Accept\"",
+                            "\"/guardian-home\"",
+                            "url",
+                            "\"https://content.guardianapis.com/search?api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&section=(sport|business|technology|politics)&show-blocks=all\"",
+                            "then",
+                            "catch",
+                            "get",
+                            "\"/nyc-home\"",
+                            "\"https://api.nytimes.com/svc/topstories/v2/home.json?api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                            "\"/sports-nyt\"",
+                            "\"https://api.nytimes.com/svc/topstories/v2/sports.json?api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                            "\"/sports-guardian\"",
+                            "\"in world\"",
+                            "console",
+                            "log",
+                            "\"https://content.guardianapis.com/sport?api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&show-blocks=all\"",
+                            "\"/world-nyt\"",
+                            "\"https://api.nytimes.com/svc/topstories/v2/world.json?api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                            "\"/world-guardian\"",
+                            "\"https://content.guardianapis.com/world?api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&show-blocks=all\"",
+                            "\"/technology-nyt\"",
+                            "\"https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                            "\"/technology-guardian\"",
+                            "\"https://content.guardianapis.com/technology?api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&show-blocks=all\"",
+                            "\"/business-nyt\"",
+                            "\"https://api.nytimes.com/svc/topstories/v2/business.json?api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                            "\"/business-guardian\"",
+                            "\"https://content.guardianapis.com/business?api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&show-blocks=all\"",
+                            "\"/politics-nyt\"",
+                            "\"https://api.nytimes.com/svc/topstories/v2/politics.json?api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                            "\"/politics-guardian\"",
+                            "\"https://content.guardianapis.com/politics?api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&show-blocks=all\"",
+                            "\"/detailed-guardian\"",
+                            "\"detailed guardian\"",
+                            "param",
+                            "body",
+                            "id",
+                            "\"https://content.guardianapis.com/\"",
+                            "\"?api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&show-blocks=all\"",
+                            "post",
+                            "\"/detailed-nyt\"",
+                            "\"detailed nyt\"",
+                            "\"https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=web_url:(\"\"",
+                            "\"\")&api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                            "\"/search-nyt\"",
+                            "\"search nyt\"",
+                            "label",
+                            "\"https://api.nytimes.com/svc/search/v2/articlesearch.json?q=[\"",
+                            "\"]&api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                            "\"/search-guardian\"",
+                            "\"search guardian\"",
+                            "\"https://content.guardianapis.com/search?q=\"",
+                            "\"&api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&show-blocks=all\"",
+                            "server",
+                            4000,
+                            "host",
+                            "address",
+                            "port",
+                            "\"Example app listening at http://%s:%s\"",
+                            "listen"
+                        ]
+                    },
+                    "length": 638,
+                    "vocabulary": 92,
+                    "difficulty": 18.596385542168676,
+                    "volume": 4162.032527964374,
+                    "effort": 77398.76152907244,
+                    "bugs": 1.3873441759881247,
+                    "time": 4299.93119605958
+                },
+                "params": 35,
+                "line": 1,
+                "cyclomaticDensity": 1.1764705882352942
+            },
+            "functions": [
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 3,
+                        "physical": 8
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 2,
+                            "total": 5,
+                            "identifiers": [
+                                "()",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 8,
+                            "total": 12,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "next",
+                                "\"Access-Control-Allow-Origin\"",
+                                "\"*\"",
+                                "header",
+                                "\"Access-Control-Allow-Headers\"",
+                                "\"Origin, X-Requested-With, Content-Type, Accept\""
+                            ]
+                        },
+                        "length": 17,
+                        "vocabulary": 10,
+                        "difficulty": 1.5,
+                        "volume": 56.472777613085164,
+                        "effort": 84.70916641962775,
+                        "bugs": 0.01882425920436172,
+                        "time": 4.706064801090431
+                    },
+                    "params": 3,
+                    "line": 9,
+                    "cyclomaticDensity": 33.33333333333333
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 2,
+                        "physical": 13
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 9,
+                            "identifiers": [
+                                "var",
+                                "=",
+                                "()",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 7,
+                            "total": 9,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "url",
+                                "\"https://content.guardianapis.com/search?api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&section=(sport|business|technology|politics)&show-blocks=all\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 18,
+                        "vocabulary": 11,
+                        "difficulty": 2.5714285714285716,
+                        "volume": 62.26976913547136,
+                        "effort": 160.12226349121207,
+                        "bugs": 0.020756589711823786,
+                        "time": 8.895681305067336
+                    },
+                    "params": 2,
+                    "line": 17,
+                    "cyclomaticDensity": 50
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 2,
+                        "physical": 14
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 9,
+                            "identifiers": [
+                                "var",
+                                "=",
+                                "()",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 7,
+                            "total": 9,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "url",
+                                "\"https://api.nytimes.com/svc/topstories/v2/home.json?api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 18,
+                        "vocabulary": 11,
+                        "difficulty": 2.5714285714285716,
+                        "volume": 62.26976913547136,
+                        "effort": 160.12226349121207,
+                        "bugs": 0.020756589711823786,
+                        "time": 8.895681305067336
+                    },
+                    "params": 2,
+                    "line": 30,
+                    "cyclomaticDensity": 50
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 2,
+                        "physical": 13
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 9,
+                            "identifiers": [
+                                "var",
+                                "=",
+                                "()",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 7,
+                            "total": 9,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "url",
+                                "\"https://api.nytimes.com/svc/topstories/v2/sports.json?api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 18,
+                        "vocabulary": 11,
+                        "difficulty": 2.5714285714285716,
+                        "volume": 62.26976913547136,
+                        "effort": 160.12226349121207,
+                        "bugs": 0.020756589711823786,
+                        "time": 8.895681305067336
+                    },
+                    "params": 2,
+                    "line": 44,
+                    "cyclomaticDensity": 50
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 3,
+                        "physical": 14
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 11,
+                            "identifiers": [
+                                "()",
+                                ".",
+                                "var",
+                                "="
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 10,
+                            "total": 12,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "\"in world\"",
+                                "console",
+                                "log",
+                                "url",
+                                "\"https://content.guardianapis.com/sport?api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&show-blocks=all\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 23,
+                        "vocabulary": 14,
+                        "difficulty": 2.4,
+                        "volume": 87.56916320732489,
+                        "effort": 210.16599169757973,
+                        "bugs": 0.029189721069108297,
+                        "time": 11.675888427643319
+                    },
+                    "params": 2,
+                    "line": 57,
+                    "cyclomaticDensity": 33.33333333333333
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 2,
+                        "physical": 13
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 9,
+                            "identifiers": [
+                                "var",
+                                "=",
+                                "()",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 7,
+                            "total": 9,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "url",
+                                "\"https://api.nytimes.com/svc/topstories/v2/world.json?api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 18,
+                        "vocabulary": 11,
+                        "difficulty": 2.5714285714285716,
+                        "volume": 62.26976913547136,
+                        "effort": 160.12226349121207,
+                        "bugs": 0.020756589711823786,
+                        "time": 8.895681305067336
+                    },
+                    "params": 2,
+                    "line": 71,
+                    "cyclomaticDensity": 50
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 3,
+                        "physical": 19
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 11,
+                            "identifiers": [
+                                "()",
+                                ".",
+                                "var",
+                                "="
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 10,
+                            "total": 12,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "\"in world\"",
+                                "console",
+                                "log",
+                                "url",
+                                "\"https://content.guardianapis.com/world?api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&show-blocks=all\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 23,
+                        "vocabulary": 14,
+                        "difficulty": 2.4,
+                        "volume": 87.56916320732489,
+                        "effort": 210.16599169757973,
+                        "bugs": 0.029189721069108297,
+                        "time": 11.675888427643319
+                    },
+                    "params": 2,
+                    "line": 84,
+                    "cyclomaticDensity": 33.33333333333333
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 2,
+                        "physical": 13
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 9,
+                            "identifiers": [
+                                "var",
+                                "=",
+                                "()",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 7,
+                            "total": 9,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "url",
+                                "\"https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 18,
+                        "vocabulary": 11,
+                        "difficulty": 2.5714285714285716,
+                        "volume": 62.26976913547136,
+                        "effort": 160.12226349121207,
+                        "bugs": 0.020756589711823786,
+                        "time": 8.895681305067336
+                    },
+                    "params": 2,
+                    "line": 103,
+                    "cyclomaticDensity": 50
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 3,
+                        "physical": 14
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 11,
+                            "identifiers": [
+                                "()",
+                                ".",
+                                "var",
+                                "="
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 10,
+                            "total": 12,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "\"in world\"",
+                                "console",
+                                "log",
+                                "url",
+                                "\"https://content.guardianapis.com/technology?api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&show-blocks=all\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 23,
+                        "vocabulary": 14,
+                        "difficulty": 2.4,
+                        "volume": 87.56916320732489,
+                        "effort": 210.16599169757973,
+                        "bugs": 0.029189721069108297,
+                        "time": 11.675888427643319
+                    },
+                    "params": 2,
+                    "line": 116,
+                    "cyclomaticDensity": 33.33333333333333
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 2,
+                        "physical": 13
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 9,
+                            "identifiers": [
+                                "var",
+                                "=",
+                                "()",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 7,
+                            "total": 9,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "url",
+                                "\"https://api.nytimes.com/svc/topstories/v2/business.json?api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 18,
+                        "vocabulary": 11,
+                        "difficulty": 2.5714285714285716,
+                        "volume": 62.26976913547136,
+                        "effort": 160.12226349121207,
+                        "bugs": 0.020756589711823786,
+                        "time": 8.895681305067336
+                    },
+                    "params": 2,
+                    "line": 130,
+                    "cyclomaticDensity": 50
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 3,
+                        "physical": 14
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 11,
+                            "identifiers": [
+                                "()",
+                                ".",
+                                "var",
+                                "="
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 10,
+                            "total": 12,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "\"in world\"",
+                                "console",
+                                "log",
+                                "url",
+                                "\"https://content.guardianapis.com/business?api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&show-blocks=all\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 23,
+                        "vocabulary": 14,
+                        "difficulty": 2.4,
+                        "volume": 87.56916320732489,
+                        "effort": 210.16599169757973,
+                        "bugs": 0.029189721069108297,
+                        "time": 11.675888427643319
+                    },
+                    "params": 2,
+                    "line": 143,
+                    "cyclomaticDensity": 33.33333333333333
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 2,
+                        "physical": 13
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 9,
+                            "identifiers": [
+                                "var",
+                                "=",
+                                "()",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 7,
+                            "total": 9,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "url",
+                                "\"https://api.nytimes.com/svc/topstories/v2/politics.json?api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 18,
+                        "vocabulary": 11,
+                        "difficulty": 2.5714285714285716,
+                        "volume": 62.26976913547136,
+                        "effort": 160.12226349121207,
+                        "bugs": 0.020756589711823786,
+                        "time": 8.895681305067336
+                    },
+                    "params": 2,
+                    "line": 158,
+                    "cyclomaticDensity": 50
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 3,
+                        "physical": 14
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 11,
+                            "identifiers": [
+                                "()",
+                                ".",
+                                "var",
+                                "="
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 10,
+                            "total": 12,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "\"in world\"",
+                                "console",
+                                "log",
+                                "url",
+                                "\"https://content.guardianapis.com/politics?api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&show-blocks=all\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 23,
+                        "vocabulary": 14,
+                        "difficulty": 2.4,
+                        "volume": 87.56916320732489,
+                        "effort": 210.16599169757973,
+                        "bugs": 0.029189721069108297,
+                        "time": 11.675888427643319
+                    },
+                    "params": 2,
+                    "line": 171,
+                    "cyclomaticDensity": 33.33333333333333
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 5,
+                        "physical": 20
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 17,
+                            "identifiers": [
+                                "()",
+                                ".",
+                                "=",
+                                "+"
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 14,
+                            "total": 21,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "\"detailed guardian\"",
+                                "console",
+                                "log",
+                                "param",
+                                "body",
+                                "id",
+                                "url",
+                                "\"https://content.guardianapis.com/\"",
+                                "\"?api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&show-blocks=all\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 38,
+                        "vocabulary": 18,
+                        "difficulty": 3,
+                        "volume": 158.45715005480787,
+                        "effort": 475.3714501644236,
+                        "bugs": 0.05281905001826929,
+                        "time": 26.409525009134644
+                    },
+                    "params": 2,
+                    "line": 185,
+                    "cyclomaticDensity": 20
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 6,
+                        "physical": 21
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 19,
+                            "identifiers": [
+                                "()",
+                                ".",
+                                "=",
+                                "+"
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 14,
+                            "total": 24,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "\"detailed nyt\"",
+                                "console",
+                                "log",
+                                "param",
+                                "body",
+                                "id",
+                                "url",
+                                "\"https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=web_url:(\"\"",
+                                "\"\")&api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 43,
+                        "vocabulary": 18,
+                        "difficulty": 3.4285714285714284,
+                        "volume": 179.30677506201943,
+                        "effort": 614.7660859269237,
+                        "bugs": 0.059768925020673144,
+                        "time": 34.15367144038465
+                    },
+                    "params": 2,
+                    "line": 205,
+                    "cyclomaticDensity": 16.666666666666664
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 6,
+                        "physical": 23
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 20,
+                            "identifiers": [
+                                "()",
+                                ".",
+                                "=",
+                                "+"
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 15,
+                            "total": 25,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "\"search nyt\"",
+                                "console",
+                                "log",
+                                "param",
+                                "body",
+                                "id",
+                                "label",
+                                "url",
+                                "\"https://api.nytimes.com/svc/search/v2/articlesearch.json?q=[\"",
+                                "\"]&api-key=FvJvL8Hpqz5JMaLPhhGci4rf0hqqXnkV\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 45,
+                        "vocabulary": 19,
+                        "difficulty": 3.3333333333333335,
+                        "volume": 191.15673810496133,
+                        "effort": 637.1891270165378,
+                        "bugs": 0.06371891270165378,
+                        "time": 35.39939594536321
+                    },
+                    "params": 2,
+                    "line": 226,
+                    "cyclomaticDensity": 16.666666666666664
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 6,
+                        "physical": 23
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 20,
+                            "identifiers": [
+                                "()",
+                                ".",
+                                "=",
+                                "+"
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 15,
+                            "total": 25,
+                            "identifiers": [
+                                "req",
+                                "res",
+                                "\"search guardian\"",
+                                "console",
+                                "log",
+                                "param",
+                                "body",
+                                "id",
+                                "label",
+                                "url",
+                                "\"https://content.guardianapis.com/search?q=\"",
+                                "\"&api-key=f5da6117-9a12-4b0e-a8d7-22dbf02b05d1&show-blocks=all\"",
+                                "fetch",
+                                "then",
+                                "catch"
+                            ]
+                        },
+                        "length": 45,
+                        "vocabulary": 19,
+                        "difficulty": 3.3333333333333335,
+                        "volume": 191.15673810496133,
+                        "effort": 637.1891270165378,
+                        "bugs": 0.06371891270165378,
+                        "time": 35.39939594536321
+                    },
+                    "params": 2,
+                    "line": 249,
+                    "cyclomaticDensity": 16.666666666666664
+                },
+                {
+                    "name": "<anonymous>",
+                    "sloc": {
+                        "logical": 3,
+                        "physical": 6
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 12,
+                            "identifiers": [
+                                "const",
+                                "=",
+                                ".",
+                                "()"
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 7,
+                            "total": 13,
+                            "identifiers": [
+                                "host",
+                                "server",
+                                "address",
+                                "port",
+                                "\"Example app listening at http://%s:%s\"",
+                                "console",
+                                "log"
+                            ]
+                        },
+                        "length": 25,
+                        "vocabulary": 11,
+                        "difficulty": 3.7142857142857144,
+                        "volume": 86.48579046593244,
+                        "effort": 321.2329360163205,
+                        "bugs": 0.02882859682197748,
+                        "time": 17.846274223128916
+                    },
+                    "params": 0,
+                    "line": 272,
+                    "cyclomaticDensity": 33.33333333333333
+                }
+            ],
+            "dependencies": [
+                {
+                    "line": 1,
+                    "path": "express",
+                    "type": "CommonJS"
+                },
+                {
+                    "line": 3,
+                    "path": "cors",
+                    "type": "CommonJS"
+                },
+                {
+                    "line": 5,
+                    "path": "body-parser",
+                    "type": "CommonJS"
+                },
+                {
+                    "line": 8,
+                    "path": "node-fetch",
+                    "type": "CommonJS"
+                }
+            ],
+            "maintainability": 132.84092085728915,
+            "loc": 3.2222222222222223,
+            "cyclomatic": 1,
+            "effort": 274.563538638153,
+            "params": 1.9444444444444444,
+            "path": "./server.js"
+        }
+    ],
+    "adjacencyMatrix": [
+        [
+            0
+        ]
+    ],
+    "firstOrderDensity": 0,
+    "visibilityMatrix": [
+        [
+            0
+        ]
+    ],
+    "changeCost": 100,
+    "coreSize": 0,
+    "loc": 3.2222222222222223,
+    "cyclomatic": 1,
+    "effort": 274.563538638153,
+    "params": 1.9444444444444444,
+    "maintainability": 132.84092085728915
+}
